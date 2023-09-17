@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Keyframes Animation Example</title>
+</head>
+<body>
+    <div class="circle">
+    </div>
+    <div class="name">
+        <h1>My name is Swapneel</h1>
+    </div>
+</body>
+<style>
+    body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: #3498db;
+  border-radius: 50%;
+  animation: growAndChangeColor 0.2s ease-in-out ;
+}
+.name {
+  background-color: #3498db;
+  /* border-radius: 100%; */
+  /* animation: growAndChangeColor 2s ease-in-out infinite; */
+}
+
+
+@keyframes growAndChangeColor {
+  0% {
+    width: 50px;
+    height: 50px;
+    background-color: #db5534;
+  }
+  50% {
+    width: 100px;
+    height: 100px;
+    background-color: #cde73c;
+  }
+  75% {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+  }
+  100% {
+    width: 120px;
+    height: 120px;
+    background-color: #f810c2;
+  }
+}
+
+</style>
+</html>
