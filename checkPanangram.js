@@ -1,17 +1,10 @@
-// let sentence = "leetcode";
+let sentence = "thequickbrownfoxjumpsoverthelazydog";
 
-// let alphabet = 'abcdefghijklmnopqrstuvwxyz';
+const data = new Set(sentence);
+let arr =[...data]
 
-// let splitAlaphbet = alphabet.split('');
-
-// for(let ele  of splitAlaphbet){
-//     if(sentence.includes(ele)){
-//         console.log("yes")
-//     }
-// }
-
-
-let  a = "my name is raj";
-let last = 0
-let splitdata = a.split(' ')
-console.log(splitdata[splitdata.length-1])
+if(arr.length!==26){
+    console.log(false)
+}else{
+    console.log(true)
+}
