@@ -4,6 +4,4 @@
 
 // console.log(sunstring)
 
-nums = [10,2]
-let splitData = nums.split("")
-console.log("spliteData", splitData);
+let nums = [10,2]
