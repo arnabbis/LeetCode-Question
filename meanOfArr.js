@@ -1,8 +1,8 @@
-let arr = [1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,,2,2,3]
+let arr = [1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3]
 let store = []
 let sortArr = arr.sort();
 // console.log(sortArr)
-console.log(sortArr.length)
+console.log(sortArr)
 
 let findArrLength = Math.floor(sortArr.length*0.05);
 console.log("find the arra length",findArrLength)
