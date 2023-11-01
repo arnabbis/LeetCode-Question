@@ -1,24 +1,12 @@
-let nums = [1,2,3,1];
-let  k = 3;
+let nums = [1,2,3,1,2,3];
+let  k = 2;
 let ele = [];
 
 for(let i=0;i<nums.length;i++){
     for(let j=i+1;j<nums.length;j++){
-        if(nums[i]==nums[j]){
+        if(nums[i]==nums[j] && Math.abs(i-j)==k){
             ele.push(i,j)
         }
     }
 }
-// console.log(ele)
-for(let i=0;i<ele.length;i++){
-    for(let j=i+1;j<ele.length;j++){
-        let data = Math.abs(ele[j]-ele[i])
-            console.log(data)
-            if(Math.abs(ele[j]-ele[i])==k){
-                console.log(true)
-            }else{
-                console.log(false)
-            }
-        }
-        
-}
+console.log(ele);
