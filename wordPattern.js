@@ -8,5 +8,3 @@ for(let i=0;i<pattern.length;i++){
 };
 
 
-
-

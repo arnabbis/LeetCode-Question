@@ -14,7 +14,7 @@ for(let i=0;i<sub.length;i++){
     }
     product.push(productData);
 }
-
+console.log(product)
 let sortProduct = product.sort((a,b)=>a-b);
 
 console.log(sortProduct[sortProduct.length-1])

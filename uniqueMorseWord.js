@@ -7,7 +7,3 @@ for(let i=0;i<arr.length;i++){
     storeArr.push({ele:arr[i],value:word[i]})
 }
 
-for(let i=0;i<s.length;i++){
-    let split = s[i].split('');
-    
-}
