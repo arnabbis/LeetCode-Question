@@ -1,12 +1,24 @@
-let nums = [1,3,5,4,7];
-let store = [];
+let nums = [1,2]
+let storeDif = [];
+let storeSub = 0;
+let storeele = [];
 for(let i=0;i<nums.length-1;i++){
-    if(nums[i+1]-nums[i]==2){
-        store.push(nums[i],nums[i+1])
+    storeDif.push(nums[i+1]-nums[i])
+}
+console.log(storeDif)
+
+for(let i=0;i<storeDif.length;i++){
+    if(storeDif[i]==storeDif[i+1]){
+        storeSub=storeDif[i]
     }
 }
 
-let removeDubli = new Set(store);
+for(let i=0;i<nums.length-1;i++){
+    if(nums[i+1]-nums[i]==storeSub){
+        storeele.push(nums[i],nums[i+1])
+    }
+}
 
-let newArr = [...removeDubli];
+let dubli = new Set(storeele);
+let newArr = [...dubli];
 console.log(newArr)
