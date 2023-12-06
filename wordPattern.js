@@ -8,3 +8,4 @@ for(let i=0;i<pattern.length;i++){
 };
 
 
+console.log("store",store);

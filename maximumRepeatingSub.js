@@ -1,5 +1,5 @@
-let sequence = "a";
-let  word = "b";
+let sequence = "aaabaaaabaaabaaaabaaaabaaaabaaaaba";
+let  word = "aaaba";
 let count = 0;
 let store = [];
 if(sequence.length==1 && sequence===word){
@@ -10,6 +10,7 @@ for(let i=0;i<sequence.length;i++){
         store.push(sequence.slice(i,j))
     }
 }
+console.log("subarray",store.length)
 // console.log(store)
 for(let i=0;i<store.length;i++){
     if(store[i]==word){
