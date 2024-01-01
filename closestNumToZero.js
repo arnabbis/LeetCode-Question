@@ -1,14 +1,21 @@
-let nums = [-4, -2, 1, 4, 8];
+let num =[-100000,-100000]
 let store = [];
-
-
-
-function findClosestNumber(nums){
-    
-    
+function findCount(num){
+let count = 0;
+if(num<=0){
+for(let i=num;i<0;i++){
+    count++
 }
+}else{
+    for(let i=0;i<num;i++){
+        count++
+    }
+}
+console.log(count);
+}
+for(let i=0;i<num.length;i++){
+        store.push(findCount(num[i]))
+        store.sort((a,b)=>a-b)
+    }
 
-let getCount = findClosestNumber(nums);
-console.log(getCount)
-
-
+console.log(store[0]);
