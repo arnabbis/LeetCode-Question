@@ -13,12 +13,8 @@ for(let i=0;i<b.length;i++){
 console.log(obj);
 console.log(obj1);
 
-let isomorphic = true;
 for(let ele in obj){
-    if(obj[ele]!==obj1[ele]){
-        isomorphic=false;
-        break;
-    }
+    
 }
 
 
