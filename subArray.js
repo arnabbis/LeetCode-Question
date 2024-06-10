@@ -8,7 +8,7 @@ for(let i=0;i<arr.length;i++){
        sub.push(arr.slice(i, j))
     }
 }
-// console.log("sub arrays", sub)
+console.log("sub arrays", sub)
 
 for(let i=0;i<sub.length;i++){
     if(sub[i].length%2!==0){
