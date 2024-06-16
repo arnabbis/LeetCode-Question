@@ -1,30 +1,11 @@
-let arr = [1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3]
-let store = []
-let sortArr = arr.sort();
-// console.log(sortArr)
-console.log(sortArr)
-
+let arr = [6,0,7,0,7,5,7,8,3,4,0,7,8,1,6,8,1,1,2,4,8,1,9,5,4,3,8,5,10,8,6,6,1,0,6,10,8,2,3,4]
+let sortArr = arr.sort((a,b)=>a-b);
 let findArrLength = Math.floor(sortArr.length*0.05);
-console.log("find the arra length",findArrLength)
-let max = arr[0];
-let min = arr[0];
-for(let i=0;i<sortArr.length;i++){
-    if(sortArr[i]>max){
-        max=sortArr[i]
-        // store.push(max)
-    }
-    if(sortArr[i]<min){
-        min=sortArr[i]
-        // store.push(min)
-    }
-}
-
-for(let i=0;i<arr.length;i++){
-    if(store.includes(arr[i])){
-        
-    }
-}
-
-
+let removeMin = sortArr.splice(0,findArrLength)
+let removeMax = sortArr.splice(sortArr.length-findArrLength,findArrLength);
+console.log(removeMax,removeMin)
+let sum = sortArr.reduce((acc,curr)=>curr+acc,0);
+let avg = sum/sortArr.length;
+console.log(avg.toFixed(5))
 
 
