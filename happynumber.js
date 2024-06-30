@@ -1,18 +1,17 @@
-let j= 19;
-function happyNumber(j){
-    if(j===1){
-        return true
+let j=19;
+let happyNumber = false;
+let storeData = new Set()
+while(j>=1){
+    let splitEle = j.toString().split('').map(ele=>ele*ele).reduce((acc,curr)=>acc+curr,0)
+    if(splitEle===1){
+        happyNumber = true
+        break;
+    }else if(storeData.has(splitEle)){
+        happyNumber = false
+        break;
+    }else{
+        storeData.add(splitEle)
+        j = splitEle
     }
-let changeNum = j.toString();
-let splitdata = changeNum.split('');
-let sum = 0;
-let change = splitdata.map((data)=>(parseInt(data,10)**2))
-console.log(change)
-
-for(let i=0;i<change.length;i++){
-    sum = sum+change[i]
 }
-return happyNumber(sum)
-}
-
-console.log(happyNumber(j))
+console.log(happyNumber)
