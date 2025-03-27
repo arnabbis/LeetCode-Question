@@ -1,0 +1,21 @@
+let board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]];
+let word = "ABCB";
+let obj = {};
+let obj1 = {};
+for(let i=0;i<word.length;i++){
+ obj[word[i]] = (obj[word[i]]||0) + 1;
+}
+let flatdata = board.flat();
+for(let i=0;i<flatdata.length;i++){
+    obj1[flatdata[i]] = (obj1[flatdata[i]]||0)+1
+}
+
+let intersection = true
+for(let ele in obj){
+    if(!obj1.hasOwnProperty(ele) || obj[ele]>obj1[ele]){
+        intersection = false;
+        break;
+    }
+}
+
+console.log(intersection)
